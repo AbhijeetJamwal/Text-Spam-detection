@@ -8,7 +8,7 @@ from sklearn.naive_bayes import MultinomialNB       #NaiveBayes for text classif
 from sklearn.metrics import accuracy_score  
 from .forms import MessageForm
 
-df = pd.read_csv("D:/Projects/Spam detection/emails.csv")
+df = pd.read_csv("spamDetection/emails.csv")
 
 vectorizer = CountVectorizer()
 x = vectorizer.fit_transform(df["text"])
